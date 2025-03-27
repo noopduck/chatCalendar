@@ -1,0 +1,31 @@
+{
+    "prompt": {
+      "tasks": [
+        {
+          "task": "List upcoming events",
+          "input_variables": ["user_email"],
+          "output_variables": [
+            {"name": "events", "type": "array"}
+          ]
+        },
+        {
+          "task": "Create new event",
+          "input_variables": [
+            {"name": "summary"},
+            {"name": "title"},
+            {"name": "description"},
+            {"name": "location"},
+            {"name": "start_time"},
+            {"name": "end_time"}
+          ],
+          "output_variables": [
+            {"name": "event_id", "type": "string"}
+          ]
+        }
+      ]
+    },
+    "completion": {
+      "format": "json",
+      "output_type": "text"
+    }
+  }
