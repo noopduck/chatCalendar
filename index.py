@@ -1,4 +1,3 @@
-# calendar_plugin.py
 from fastapi import Depends, FastAPI, HTTPException, Header
 from pydantic import BaseModel
 from calendarService import CalendarService
